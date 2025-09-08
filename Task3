@@ -1,0 +1,102 @@
+task 3 
+Task 8: Try out Explain and  /doc command on workspace, a particular file and highlighted code (#selected) using 
+
+folder SampleApps\APL2007M2Sample1
+
+a) Sidebar Chat (CNTRL + Shift + I) b) Inline Chat (CNTRL + I )
+ 
+3. Open first folder from Samples S:\Official\GitHubCoPilot\SampleApps\APL2007M2Sample1
+
+4. Highlight first folder and type in chat - 
+
+@workspace /Explain this project
+
+@workspace /explain #file:MainWindow.xaml.cs
+ 5. Open the `MainWindow.xaml.cs` file open in the editor.
+
+Highlight -> private async Task SumPageSizesAsync()
+
+Right click - Copilot - Explain
+ 
+6. Highlight -> IEnumerable<Task<int>> downloadTasksQuery =
+
+Right click - Copilot - Explain
+ 
+7. ERROR - hover -> int[] lengths = Task.WhenAll(downloadTasks);
+
+Press CNTRL+i to bring inline chat
+
+/explain why is the selection causing an error
+ 
+Apply changes
+ 
+int[] lengths = await Task.WhenAll(downloadTasks);
+ 
+8. Add Exceptions
+
+Select the code lines that include the `SumPageSizesAsync` and `ProcessUrlAsync` methods.
+
+@workspace /explain #MainWindow.xaml.cs How can I handle exceptions thrown during the download process?
+ 
+9. Add Exceptions from Inline Chat
+
+To ask inline chat how to implement exception handling, 
+
+select the `ProcessUrlAsync` method, 
+
+press **Ctrl+I**, and then enter the following prompt:
+
+How can I handle exceptions thrown during the download process?
+ 
+10. Create a README.md file using Agent mode.
+
+Use Agent mode of side chat
+
+create a README.md file following standard convention for the project and place it at appropriate location
+ Generate project documentation by using GitHub Copilot Chat
+
+==================
+
+1. Open first folder from Samples and run below command
+
+@workspace document this project
+
+@workspace document the project dependencies
+
+@workspace generate a readme document that can be used as a repo description
+
+@workspace generate readme project documentation formatted using a raw markdown format
+ 
+You can also generate documentation for the following project sections:
+
+    - Project requirements
+
+    - Project constraints
+
+    - Project architecture
+
+    - Project design
+
+    - Project testing
+
+    - Project deployment
+
+    - Project summary
+
+ 1. Open first folder from Samples and run below command
+
+@workspace #selection generate inline code documentation for the selected code
+ 
+2. Inline Chat Completion
+
+	1. Select the `OnStartButtonClick` method.
+
+	2. To open an inline chat, press **Ctrl+I** and type
+
+	/doc
+3. Generate Docs Smart Action
+
+	1. In the Visual Studio Code editor, select all of the methods *inside* the `MainWindow` class.
+
+	2. Right-click the selected code, select **Copilot**, and then select **Generate Docs**.
+ 
