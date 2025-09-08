@@ -1,0 +1,53 @@
+Explore the GitHub Copilot Portal, especially through the GitHub web interface:
+ 
+Step 1. Sign In and Enable Copilot https://github.com/copilot
+
+1. Go to GitHub Copilot Portal. 
+
+2. Sign in with your GitHub account.
+
+3. Choose a plan (Free, Pro, or Pro+).
+
+4. Enable Copilot and various AI Models from your settings. https://github.com/settings/copilot/features
+ 
+Step 2: Import My sample repo: 
+
+1. Import this repo into your github in case you do not have a repository
+https://github.com/ShahabMohammed/AdvancedAutomated-AzureBugCretor
+ 
+Step 3. Navigate to a Repository
+
+1. Open any repository you own or have access to.
+
+2, Click on a file (e.g., .js, .py, .md, etc.).
+ 
+Step 4. Use Copilot Chat in the Portal
+
+1. Click the Copilot icon (looks like a robot) in the top-right corner of the file view.
+
+2. A chat panel opens on the left.
+ 
+Step 5. Ask Your First Question
+
+In the chat box at the bottom, try:
+
+1. Explain this file
+
+2. How can I improve this code?
+
+3. Write a unit test for this class
+ 
+Step 6. Continue the Conversation
+
+Ask follow-ups like:
+
+1. Tell me more
+
+2. Can you optimize this code?
+
+3. Add comments to this code
+
+4. Enhance this file by adding exception handling, comments, XML comments to generate docfx.xml file
+GitHub Copilot
+AI that builds with you
+ 
