@@ -1,0 +1,64 @@
+Examples of Chat Participants using @:
+
+@workspace: The @workspace participant can help answer questions about the code in your workspace or suggest ways to refactor or improve your code..
+
+• Example: @workspace list all functions that use HttpClient.
+
+@vscode: The @vscode participant knows about commands and features in the Visual Studio Code editor itself, and can help you use them..
+
+• Example: @vscode how do I enable autosave?
+
+@terminal: The @terminal participant can help with the integrated terminal shell and its contents.
+
+• Example: @terminal show me the git command to create a new branch.
+
+• Example: @terminal fix the errors.
+
+@github: WThe @github participant can help get answers grounded in web search, code search, and your enterprise's knowledge bases.
+
+• Example: @github summarize pull request #15.
+ 
+Examples of built-in slash commands:
+
+/help: Get help about using GitHub Copilot.
+
+/doc: Generate code documentation.
+
+/clear: Start a new chat session.
+
+/explain: Explain how the selected code works.
+
+/tests: Generate unit tests for the selected code.
+
+/fix: Propose a fix for the selected code.
+
+/new: Scaffold code for a new workspace. Only the chat prompt is used as context.
+
+/newNotebook: Create a new Jupyter Notebook. Only the chat prompt is used as context.
+ 
+Examples of built-in chat variables are:
+
+#editor: the visible source code in the active editor.
+
+#selection: the current selection in the active editor. The editor content is implicitly included in the Chat view context.
+
+#<file or folder name>: type #, followed by a file or folder name, to add it as chat context.
+
+#codebase: add relevant workspace content as context to your prompt.
+
+#terminalSelection: the active terminal's selection.
+
+#terminalLastCommand: the active terminal's last run command.
+ 
+Examples using chat participants combined with slash commands:
+
+@workspace /explain: Generate an explanation of the full workspace.
+
+@workspace /fix (or /fix): Propose a fix for the problems in the selected code.
+
+@workspace /tests (or /tests): Generate unit tests for the selected code.
+
+@vscode /api (or /api): Ask about Visual Studio Code extension development.
+
+@workspace /new (or /new): Scaffold code for a new workspace.
+ 
